@@ -14,3 +14,7 @@ body {
   font-style: normal;
   background: #E6EFF5;
 }
+
+.dashboard {
+  display: flex;
+}
