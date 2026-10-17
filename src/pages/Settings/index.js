@@ -2,7 +2,7 @@ import "./index.css";
 
 function Settings() {
   return (
-    <div className="container">
+    <div>
      Settings
     </div>
   );

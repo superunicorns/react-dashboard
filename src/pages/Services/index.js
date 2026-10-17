@@ -2,7 +2,7 @@ import "./index.css";
 
 function Services() {
   return (
-    <div className="container">
+    <div>
      Services
     </div>
   );

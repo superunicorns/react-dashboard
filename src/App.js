@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="dashboard">
       <Sidebar />
-      <main>
+      <main className="container">
         <AnimatePresence mode="wait">
           <Routes>
             <Route path="/" element={<Home />} />

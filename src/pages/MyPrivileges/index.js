@@ -2,7 +2,7 @@ import "./index.css";
 
 function MyPrivileges() {
   return (
-    <div className="container">
+    <div>
      My Privileges
     </div>
   );

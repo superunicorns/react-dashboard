@@ -2,7 +2,7 @@ import "./index.css";
 
 function Transactions() {
   return (
-    <div className="container">
+    <div>
      Transactions
     </div>
   );

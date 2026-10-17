@@ -2,7 +2,7 @@ import "./index.css";
 
 function CreditCards() {
   return (
-    <div className="container">
+    <div>
      Credit Cards
     </div>
   );

@@ -15,7 +15,9 @@ import "./index.css";
 function Sidebar() {
   return (
     <div className="sidebar">
-      <img src={Logo} className="sidebar-logo" alt="Logo" width="183px" height="36px" />
+      <div className="sidebar-logo">
+      <img src={Logo} alt="Logo" />
+      </div>
       <ul className="sidebar-menu">
         <NavLink to="/" className="nav-link">
           {({ isActive }) => (

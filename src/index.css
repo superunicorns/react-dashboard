@@ -12,9 +12,29 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-style: normal;
-  background: #E6EFF5;
 }
 
 .dashboard {
   display: flex;
+}
+
+.container {
+  padding: 30px;
+  background: #E6EFF5;
+  min-height: 100vh;
+  height: auto;
+  width: 100%;
+  margin-left: 280px;
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container {
+    margin-left: 0;
+    margin-top: 160px;
+  }
 }
