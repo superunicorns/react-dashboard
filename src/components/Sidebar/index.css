@@ -4,5 +4,61 @@
   min-height: 100vh;
   height: 100vh;
   border-right: 1px solid #E6EFF5;
-  padding: 20px;
+  padding: 0;
+}
+
+.sidebar-logo {
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.sidebar-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 30px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #C5C5CF;
+}
+
+.nav-link:visited {
+  text-decoration: none;
+  color: #C5C5CF;
+}
+
+.nav-item {
+  display: flex;
+  padding: 20px 35px;
+  gap: 20px;
+  font-size: 20px;
+  align-items: center;
+  width: 100%;
+  transition: all 300ms ease;
+  position: relative;
+}
+
+.nav-item:hover {
+  background: rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.nav-item.active {
+  color: #2D60FF !important;
+  background: white !important;
+}
+
+.nav-item.active::before {
+  content: "";
+  height: 100%;
+  width: 20px;
+  background: #2D60FF;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 25px;
+  margin-left: -15px;
 }

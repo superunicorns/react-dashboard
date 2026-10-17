@@ -15,76 +15,76 @@ import "./index.css";
 function Sidebar() {
   return (
     <div className="sidebar">
-      <img src={Logo} alt="Logo" width="183px" height="36px" />
-      <ul>
+      <img src={Logo} className="sidebar-logo" alt="Logo" width="183px" height="36px" />
+      <ul className="sidebar-menu">
         <NavLink to="/" className="nav-link">
           {({ isActive }) => (
-            <li>
-              {isActive ? <GoHomeFill /> : <GoHome />}
+            <li className={isActive ? "nav-item active" : "nav-item"}>
+              {isActive ? <GoHomeFill size={32} /> : <GoHome size={32} />}
               <span>Home</span>
             </li>
           )}
         </NavLink>
         <NavLink to="/transactions" className="nav-link">
           {({ isActive }) => (
-            <li>
-              {isActive ? <AiFillDollarCircle /> : <AiOutlineDollar />}
+            <li className={isActive ? "nav-item active" : "nav-item"}>
+              {isActive ? <AiFillDollarCircle size={32} /> : <AiOutlineDollar size={32} />}
               <span>Transactions</span>
             </li>
           )}
         </NavLink>
         <NavLink to="/accounts" className="nav-link">
           {({ isActive }) => (
-            <li>
-              {isActive ? <FaUser /> : <FaRegUser />}
+            <li className={isActive ? "nav-item active" : "nav-item"}>
+              {isActive ? <FaUser size={32} /> : <FaRegUser size={32} />}
               <span>Accounts</span>
             </li>
           )}
         </NavLink>
         <NavLink to="/investments" className="nav-link">
           {({ isActive }) => (
-            <li>
-              {isActive ? <IoStatsChartSharp /> : <IoStatsChartOutline />}
+            <li className={isActive ? "nav-item active" : "nav-item"}>
+              {isActive ? <IoStatsChartSharp size={32} /> : <IoStatsChartOutline size={32} />}
               <span>Investments</span>
             </li>
           )}
         </NavLink>
         <NavLink to="/credit-cards" className="nav-link">
           {({ isActive }) => (
-            <li>
-              {isActive ? <FaCreditCard /> : <FaRegCreditCard />}
+            <li className={isActive ? "nav-item active" : "nav-item"}>
+              {isActive ? <FaCreditCard size={32} /> : <FaRegCreditCard size={32} />}
               <span>Credit Cards</span>
             </li>
           )}
         </NavLink>
         <NavLink to="/loans" className="nav-link">
           {({ isActive }) => (
-            <li>
-              {isActive ? <PiMoneyWavyFill /> : <PiMoneyWavyLight />}
+            <li className={isActive ? "nav-item active" : "nav-item"}>
+              {isActive ? <PiMoneyWavyFill size={32} /> : <PiMoneyWavyLight size={32} />}
               <span>Loans</span>
             </li>
           )}
         </NavLink>
         <NavLink to="/services" className="nav-link">
           {({ isActive }) => (
-            <li>
-              {isActive ? <HiMiniWrenchScrewdriver /> : <HiOutlineWrenchScrewdriver />}
+            <li className={isActive ? "nav-item active" : "nav-item"}>
+              {isActive ? <HiMiniWrenchScrewdriver size={32} /> : <HiOutlineWrenchScrewdriver size={32} />}
               <span>Services</span>
             </li>
           )}
         </NavLink>
         <NavLink to="/my-privileges" className="nav-link">
           {({ isActive }) => (
-            <li>
-              {isActive ? <FaLightbulb /> : <FaRegLightbulb />}
+            <li className={isActive ? "nav-item active" : "nav-item"}>
+              {isActive ? <FaLightbulb size={32} /> : <FaRegLightbulb size={32} />}
               <span>My Privileges</span>
             </li>
           )}
         </NavLink>
         <NavLink to="/settings" className="nav-link">
           {({ isActive }) => (
-            <li>
-              {isActive ? <IoSettings /> : <IoSettingsOutline />}
+            <li className={isActive ? "nav-item active" : "nav-item"}>
+              {isActive ? <IoSettings size={32} /> : <IoSettingsOutline size={32} />}
               <span>Settings</span>
             </li>
           )}
